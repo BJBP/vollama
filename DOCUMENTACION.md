@@ -11,6 +11,33 @@ Este proyecto combina la funcionalidad de Text-to-Speech (TTS) utilizando Piper 
 *   `README.md`: Archivo README del proyecto.
 *   `DOCUMENTACION.md`: Este archivo de documentación.
 
+## Comandos de Instalación
+
+```bash
+# Clonar el repositorio
+git clone <repository_url>
+cd tts
+
+# Crear entorno virtual (opcional)
+python3 -m venv venv-py311
+source venv-py311/bin/activate  # Linux/macOS
+# venv-py311\Scripts\activate.bat  # Windows (CMD)
+# venv-py311\Scripts\Activate.ps1  # Windows (PowerShell)
+
+# Instalar dependencias TTS
+pip install piper-tts==1.2.0 playsound
+
+# Instalar dependencias STT (CPU)
+pip uninstall torch torchvision torchaudio -y
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip install -U openai-whisper sounddevice numpy
+
+# Instalar ffmpeg (si no está instalado)
+# Linux (Ubuntu/Debian): sudo apt update && sudo apt install ffmpeg
+# macOS (con Homebrew): brew install ffmpeg
+# Windows: (Ver instrucciones en la guía)
+```
+
 ## Funcionalidad TTS (Text-to-Speech)
 
 El script `decir_hola.py` utiliza la biblioteca Piper TTS para generar voz a partir de texto.
@@ -55,9 +82,17 @@ El script `stt.py` utiliza la biblioteca OpenAI Whisper para transcribir audio a
 
 Ejecuta el script `stt.py`. El script grabará audio desde el micrófono hasta que se detecte un período de silencio. Luego, transcribirá el audio y mostrará el texto resultante.
 
+```bash
+python stt.py
+```
+
 ### Ajuste de Sensibilidad
 
 Para ajustar la sensibilidad del micrófono, puedes ejecutar el script `sensibilidad.py`. Este script mostrará el nivel de RMS en tiempo real, lo que te permitirá ajustar el valor de `SILENCE_THRESHOLD` en el script `stt.py` para que se adapte a tu entorno.
+
+```bash
+python sensibilidad.py
+```
 
 ## Instalación
 
