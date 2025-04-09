@@ -18,7 +18,7 @@ CHUNK_SIZE = 1024   # Tamaño del bloque de audio a analizar (muestras)
 # Umbral de volumen para considerar silencio. Valores más bajos = más sensible al ruido.
 # Empieza con algo como 0.01 o 0.005 y ajusta según tus pruebas.
 # Puedes imprimir el valor RMS en la función para ayudarte a calibrar.
-SILENCE_THRESHOLD = 0.008  # -> ¡EXPERIMENTA CON ESTE VALOR! <-
+SILENCE_THRESHOLD = 100  # -> ¡EXPERIMENTA CON ESTE VALOR! <-
 
 # Duración en segundos de silencio continuo para detener la grabación.
 SILENCE_DURATION = 2.5  # -> Puedes ajustar esto (ej. 2, 3)
