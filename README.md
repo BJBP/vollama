@@ -30,6 +30,18 @@ This project demonstrates how to use Piper TTS to generate speech from text.
     pip install piper-tts==1.2.0
     ```
 
+3. Install playsound:
+
+    ```bash
+    pip install playsound
+    ```
+
+3. Install playsound:
+
+    ```bash
+    pip install playsound
+    ```
+
 4.  Download the model files:
 
     ```bash
@@ -52,6 +64,8 @@ This project demonstrates how to use Piper TTS to generate speech from text.
     ```bash
     python decir_hola.py
     ```
+
+The script will automatically play the generated audio file.
 
 ## Troubleshooting
 
