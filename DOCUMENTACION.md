@@ -4,7 +4,7 @@ Este proyecto combina la funcionalidad de Text-to-Speech (TTS) utilizando Piper 
 
 ## Estructura del Proyecto
 
-*   `decir_hola.py`: Script principal para la funcionalidad de Text-to-Speech (TTS).
+*   `tts.py`: Script principal para la funcionalidad de Text-to-Speech (TTS).
 *   `stt.py`: Script principal para la funcionalidad de Speech-to-Text (STT).
 *   `modelos/`: Directorio que contiene los modelos de voz para Piper TTS.
 *   `venv-py311/`: Entorno virtual de Python.
@@ -40,7 +40,7 @@ pip install -U openai-whisper sounddevice numpy
 
 ## Funcionalidad TTS (Text-to-Speech)
 
-El script `decir_hola.py` utiliza la biblioteca Piper TTS para generar voz a partir de texto.
+El script `tts.py` utiliza la biblioteca Piper TTS para generar voz a partir de texto.
 
 ### Dependencias
 
@@ -52,13 +52,13 @@ El script `decir_hola.py` utiliza la biblioteca Piper TTS para generar voz a par
 ### Configuración
 
 1.  Asegúrate de tener los archivos del modelo de voz en el directorio `modelos/`.
-2.  Modifica la ruta a la carpeta de modelos en el script `decir_hola.py` si es necesario.
+2.  Modifica la ruta a la carpeta de modelos en el script `tts.py` si es necesario.
 3.  Especifica el texto que quieres sintetizar en la variable `texto_a_sintetizar`.
 4.  Especifica el nombre del archivo de audio de salida en la variable `nombre_archivo_salida`.
 
 ### Uso
 
-Ejecuta el script `decir_hola.py` para generar el archivo de audio WAV a partir del texto especificado.
+Ejecuta el script `tts.py` para generar el archivo de audio WAV a partir del texto especificado.
 
 ## Funcionalidad STT (Speech-to-Text)
 

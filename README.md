@@ -62,7 +62,7 @@ This project demonstrates how to use Piper TTS to generate speech from text.
 1.  Run the script:
 
     ```bash
-    python decir_hola.py
+    python tts.py
     ```
 
 The script will automatically play the generated audio file.
@@ -70,13 +70,13 @@ The script will automatically play the generated audio file.
 ## Troubleshooting
 
 *   If you encounter a `404 Not Found` error when downloading the model files, make sure you have the `huggingface-cli` installed and that you are using the correct paths to the model files.
-*   If you encounter an error related to `sample_width` or `num_channels`, make sure you are using the correct version of the `decir_hola.py` script.
+*   If you encounter an error related to `sample_width` or `num_channels`, make sure you are using the correct version of the `tts.py` script.
 
 ## Repository Structure
 
 ```
 .
-├── decir_hola.py
+├── tts.py
 ├── modelos
 │   ├── es
 │   │   └── es_ES
