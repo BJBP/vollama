@@ -33,6 +33,12 @@ This project demonstrates how to use Piper TTS to generate speech from text.
 4.  Download the model files:
 
     ```bash
+    pip install "huggingface-hub[cli]"
+    ```
+
+    Then, download the model files:
+
+    ```bash
     cd modelos
     huggingface-cli download rhasspy/piper-voices es/es_ES/carlfm/x_low/es_ES-carlfm-x_low.onnx --local-dir . --local-dir-use-symlinks False
     huggingface-cli download rhasspy/piper-voices es/es_ES/carlfm/x_low/es_ES-carlfm-x_low.onnx.json --local-dir . --local-dir-use-symlinks False
