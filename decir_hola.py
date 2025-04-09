@@ -1,6 +1,7 @@
 # 1. Importa las clases necesarias
 from pathlib import Path
 from piper.voice import PiperVoice
+from playsound import playsound
 import wave  # ¡Importa el módulo wave!
 
 # --- Configuración ---
@@ -63,6 +64,7 @@ try:
 
     print(f"¡Éxito! El audio se ha guardado como '{nombre_archivo_salida}'")
     print("Puedes reproducir este archivo .wav con cualquier reproductor de audio.")
+    playsound(nombre_archivo_salida)
 except Exception as e:
     print(f"Error durante la síntesis de voz: {e}")
 
