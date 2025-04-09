@@ -49,11 +49,11 @@ El script `stt.py` utiliza la biblioteca OpenAI Whisper para transcribir audio a
 
 1.  Asegúrate de tener instalada la versión de PyTorch para CPU.
 2.  Especifica el modelo de Whisper a utilizar en la variable `MODEL_NAME`.
-3.  El script graba audio desde el micrófono y lo transcribe utilizando el modelo de Whisper.
+3.  Ajusta los parámetros de detección de silencio `SILENCE_THRESHOLD` y `SILENCE_DURATION` para que se adapten a tu entorno.
 
 ### Uso
 
-Ejecuta el script `stt.py`. El script te preguntará cuántos segundos quieres grabar. Después de la grabación, el script transcribirá el audio y mostrará el texto resultante.
+Ejecuta el script `stt.py`. El script grabará audio desde el micrófono hasta que se detecte un período de silencio. Luego, transcribirá el audio y mostrará el texto resultante.
 
 ## Instalación
 
