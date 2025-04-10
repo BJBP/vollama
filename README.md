@@ -1,6 +1,16 @@
-# Vollama
+# Vollama: Tu Asistente de Voz Personal con IA Local
 
-Este proyecto combina la funcionalidad de Text-to-Speech (TTS) utilizando Piper TTS, Speech-to-Text (STT) utilizando OpenAI Whisper, y un modelo de lenguaje local con Ollama para crear un asistente de voz conversacional interactivo.
+¿Cansado de asistentes de voz que comprometen tu privacidad? ¿Quieres un asistente que se adapte a tus necesidades y que puedas ejecutar localmente? ¡Vollama es la solución!
+
+Este proyecto combina la potencia de Text-to-Speech (TTS) con Piper TTS, Speech-to-Text (STT) con OpenAI Whisper, y un modelo de lenguaje local con Ollama para crear un asistente de voz conversacional interactivo, **totalmente privado y personalizable**.
+
+## Beneficios Clave
+
+*   **Privacidad:** Ejecuta todo localmente, sin necesidad de enviar tus datos a la nube.
+*   **Personalización:** Adapta el asistente a tus necesidades y preferencias.
+*   **Control:** Ten el control total de tus datos y de cómo funciona el asistente.
+*   **Interactividad:** Disfruta de conversaciones fluidas y naturales con tu asistente de voz.
+*   **Open Source:** Contribuye al proyecto y personalízalo aún más.
 
 ## Prerequisites
 
@@ -30,19 +40,13 @@ Este proyecto combina la funcionalidad de Text-to-Speech (TTS) utilizando Piper 
     pip install piper-tts==1.2.0
     ```
 
-3. Install playsound:
+4.  Install playsound:
 
     ```bash
     pip install playsound
     ```
 
-3. Install playsound:
-
-    ```bash
-    pip install playsound
-    ```
-
-4.  Download the model files:
+5.  Download the model files:
 
     ```bash
     pip install "huggingface-hub[cli]"
@@ -86,6 +90,7 @@ The script will automatically play the generated audio file.
 │   │               └── es_ES-carlfm-x_low.onnx.json
 ├── venv-py311
 └── README.md
+```
 
 ## Estructura del Proyecto
 
@@ -195,6 +200,14 @@ python sensibilidad.py
 ## Instalación
 
 Sigue los pasos en el archivo `README.md` para instalar las dependencias del proyecto.
+
+## Únete a la Comunidad Vollama
+
+¿Te gusta Vollama? ¡Únete a nuestra comunidad!
+
+*   Contribuye al proyecto en [GitHub](<repository_url>).
+*   Comparte tus ideas y sugerencias.
+*   Ayuda a otros usuarios.
 
 ## Notas Adicionales
 
