@@ -98,7 +98,16 @@ The script will automatically play the generated audio file.
 *   `asistente_voz.py`: Script que integra las funcionalidades de TTS, STT y LLM para crear un asistente de voz conversacional.
 *   `decir_hola.py`: Script de ejemplo simple para probar la funcionalidad TTS.
 *   `README.md`: Archivo README del proyecto.
-*   `documentación/`: Directorio que contiene la documentación del proyecto.
+*   `documentación/`: Directorio que contiene la documentación del proyecto, incluyendo:
+    *   `arquitectura.md`: Descripción de la arquitectura del proyecto.
+    *   `guía_desarrollador.md`: Guía para desarrolladores que quieran contribuir al proyecto.
+    *   `guía_usuario.md`: Guía para usuarios que quieran usar el proyecto.
+    *   `registro.md`: Registro de comandos y problemas enfrentados durante el desarrollo.
+    *   `api/`: Documentación de la API.
+        *   `endpoints.md`: Descripción de los endpoints de la API.
+        *   `modelos.md`: Descripción de los modelos de la API.
+    *   `diagramas/`: Diagramas del proyecto.
+        *   `arquitectura.mmd`: Diagrama de arquitectura del proyecto.
 
 ## Comandos de Instalación
 
