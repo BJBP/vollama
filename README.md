@@ -1,6 +1,6 @@
-# Documentación del Proyecto TTS con STT
+# Vollama
 
-Este proyecto combina la funcionalidad de Text-to-Speech (TTS) utilizando Piper TTS con la funcionalidad de Speech-to-Text (STT) utilizando OpenAI Whisper.
+Este proyecto combina la funcionalidad de Text-to-Speech (TTS) utilizando Piper TTS, Speech-to-Text (STT) utilizando OpenAI Whisper, y un modelo de lenguaje local con Ollama para crear un asistente de voz conversacional interactivo.
 
 ## Prerequisites
 
@@ -89,12 +89,16 @@ The script will automatically play the generated audio file.
 
 ## Estructura del Proyecto
 
-*   `tts.py`: Script principal para la funcionalidad de Text-to-Speech (TTS).
-*   `stt.py`: Script principal para la funcionalidad de Speech-to-Text (STT).
+*   `tts.py`: Script para la funcionalidad de Text-to-Speech (TTS) utilizando Piper TTS.
+*   `stt.py`: Script para la funcionalidad de Speech-to-Text (STT) utilizando OpenAI Whisper.
 *   `modelos/`: Directorio que contiene los modelos de voz para Piper TTS.
 *   `venv-py311/`: Entorno virtual de Python.
+*   `sensibilidad.py`: Script para ajustar la sensibilidad del micrófono para la funcionalidad STT.
+*   `llm.py`: Script que implementa un simulador de entrevistas de trabajo interactivo por voz.
+*   `asistente_voz.py`: Script que integra las funcionalidades de TTS, STT y LLM para crear un asistente de voz conversacional.
+*   `decir_hola.py`: Script de ejemplo simple para probar la funcionalidad TTS.
 *   `README.md`: Archivo README del proyecto.
-*   `DOCUMENTACION.md`: Este archivo de documentación.
+*   `documentación/`: Directorio que contiene la documentación del proyecto.
 
 ## Comandos de Instalación
 
