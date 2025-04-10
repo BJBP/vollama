@@ -1,4 +1,5 @@
 venv-py311/
+venv_py311/
 venv/
 modelos/
 hola_salida.wav
